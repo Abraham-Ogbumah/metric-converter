@@ -22,31 +22,25 @@ body {
     justify-content: center;
 }
 
-h1 {
-    font-size: 1.375rem;
-}
-
-h2 {
-    font-size: 0.875rem;
-}
-
-input[type="text"] {
-    color: #fff;
-    border: none;
-    background-color: transparent;
-    outline: none;
-    font-size: 6rem;
-}
-
-input::placeholder {
-    color: #fff;
-}
-
 .container {
     width: 550px;
     height: 550px;
     padding: 0.4rem;
     background-color: #fff;
+}
+
+h1 {
+    font-size: 1.375rem;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+h2, p {
+    font-size: 0.875rem;
+}
+
+p {
+    color: #D2D2D2;
 }
 
 .top {
@@ -56,13 +50,33 @@ input::placeholder {
 }
 
 input {
-    margin-top: 2rem;
-    margin-bottom: 2rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
     text-align: center;
+}
+
+input[type="text"] {
+    color: #fff;
+    border: none;
+    background-color: transparent;
+    outline: none;
+    font-size: 6rem;
+    width: 40%;
+}
+
+input::placeholder {
+    color: #fff;
+    font-size: 1rem;
 }
 
 .bottom {
     width: 100%;
-    padding: 3rem;
+    padding: 1.2rem;
     background-color: var(--bottom);
+}
+
+.content {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    line-height: 2;
 }
