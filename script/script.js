@@ -5,7 +5,9 @@ let massOfValue = document.getElementById("mass-result");
 
 userInput.value = 0
 
-userInput.addEventListener("keypress", function() {
+userInput.addEventListener("input", metricConversion)
+
+function metricConversion() {
     newInput = parseInt(userInput.value);
     
     
@@ -26,15 +28,4 @@ userInput.addEventListener("keypress", function() {
     let convertToKilos = newInput * 0.453592;
 
     massOfValue.textContent = newInput + " kilos = " + convertToPounds.toFixed(3)  + " pounds | " + newInput + " pounds = " + convertToKilos.toFixed(3) + " kilos";
-})
-
-
-
-// let newInput = parseInt(userInput);
-// console.log(newInput);
-
-// let convertToMeters = newInput * 0.3048000097536;
-// let converToFeet = newInput * 3.28084;
-
-// console.log(converToFeet);
-
+}
